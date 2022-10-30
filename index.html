@@ -10,13 +10,15 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div  id="mydiv" style="background-color: rgb(151, 151, 227) ; height: 600px ; border-radius: 10px;" class="container">
       <h2>!اضغط علي</h2>
+      <img id="myimg" style="background-color: rgb(151, 151, 227);" src="./healthcare.png" alt="">
       <section>
         <input id="weight" type="number" placeholder="الوزن بالكيلوجرام" />
         <input id="height" type="number" placeholder="الطول بالمتر" />
         <div id="result"></div>
-        <button>احسب</button>
+        <button style="color: rgb(72, 72, 226) ; background-color: rgb(255, 255, 255) ; border-radius: 4px; margin-top:10px ;" onmouseover="calculate()">احسب</button>
+        <button onclick="dark()" id="night" style="color: black; background-color:rgb(255, 255, 255) ; width: 50px; height: 50px;font-size: 10px;margin-top: 15px;border-radius: 5px;"> night mode</button>
       </section>
     </div>
   </body>
